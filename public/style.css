@@ -1,0 +1,81 @@
+body{
+    margin:0;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.page{
+    height: 100vh; /* vertical*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* para ficar um abaixo do outro*/
+}
+#login_page{
+    display: flex;
+    background-color: #FFF;
+}
+#login_name_input{
+    border: 2px solid #000;
+    background-color: #CCC;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: 0;/* para não aparecer quando der o focus nele devido cor de fundo*/
+    width: 100%;
+    max-width: 400px;
+}
+#chat_page{
+    display: none;
+}
+.chat_area{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    background-color: #CCC;
+}
+.chat_list{
+    flex: 1;
+    background-color: #FFF; 
+    overflow-y: scroll;/* scroll vertical*/
+    max-height: calc(100vh - 40px); /* menos 40px que é a altura do campo de texto para ficar certinho o scroll*/
+}
+.chat_list li{
+    padding: 3px;
+    font-size: 15px;
+}
+.chat_list li.m-status{
+    color: #333;
+    font-style: italic;
+}
+.chat_list li.m-txt span{
+    font-weight: bold;
+    color: blue;
+}
+.chat_list li.m-txt span.me{
+    color: crimson;
+}
+.user_list{
+    width: 200px;
+    background-color: #CCC;
+    overflow-y: scroll;/* scroll vertical*/
+    max-height: calc(100vh - 40px); /* menos 40px que é a altura do campo de texto para ficar certinho o scroll*/
+}
+.user_list li{
+    padding: 5px;
+    font-size: 15px;
+}
+.chat_input{
+    width: 100%;
+    display: flex;
+}
+#chat_text_input{
+    flex: 1;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 15px;
+    background-color: #CCC;
+    outline: 0;
+    border: 0;
+}
